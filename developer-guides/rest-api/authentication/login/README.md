@@ -10,11 +10,13 @@ Login with your username and password.
 
 | Argument   | Example            | Required | Description   |
 | :--------- | :----------------- | :------- | :------------ |
-| `user` | `foo@bar.com` OR `myusername` | Required | Your username or email |
-| `password` | `my$up3erP@ssw0rd` | Required | Your password |
+| `user` | `foo@bar.com` OR `myusername` | Optional | Your username or email |
+| `password` | `my$up3erP@ssw0rd` | Optional | Your password |
+| `resume` | `9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq` | Optional | Your previously issued authToken |
 
 **Notes**
 
+- **Whilst none of the arguments are required in every request, every request requires some arguments to be provided. You MUST provide either `user` AND `password`, or provide `resume`.** <br/>
 - **You will need to provide the `authToken` and `userId` for any of the authenticated methods.** <br/>
 - **If your user has two-factor(2FA) authentication enabled, you must send a request like [this](#example-call---when-two-factor2fa-authentication-is-enabled).** <br/>
 - **If LDAP authentication is enabled, you must maintain the login in the same way as you normally do. Similarly if 2FA is enabled for an LDAP user. Everything stays the same.** <br/>

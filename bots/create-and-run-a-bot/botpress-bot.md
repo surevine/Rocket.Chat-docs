@@ -6,30 +6,28 @@ Botpress is an on-prem, open-source chatbot building platform for businesses.
 
 Botpress is a Node.js package and works with Node and npm.
 
-The fastest way to start with Botpress is using [botpress-kick-starter](https://github.com/RocketChat/botpress-kick-starter) repository that is already integrated with Rocket.Chat
-via [botpress-channel connector](https://github.com/RocketChat/botpress-channel-rocketchat).
+The fastest way to start with Botpress is using [botpress-kick-starter](https://github.com/RocketChat/botpress-kick-starter) repository that is already integrated with Rocket.Chat via [botpress-channel connector](https://github.com/RocketChat/botpress-channel-rocketchat).
 
 Navigate to the folder where you want to work with the bot and proceed with the following steps:
 
 **1. install botpress package**
 
-```
+```text
 npm init -y
 npm install botpress@10.40.0
 ```
 
 **1. create a bot**
 
-```
+```text
 mkdir bot
 cd bot
 ../node_modules/.bin/botpress init
 ```
 
-`botpress init` command launches a wizard that will help you create the initial configuration.
-You should see something as follows:
+`botpress init` command launches a wizard that will help you create the initial configuration. You should see something as follows:
 
-```
+```text
 $ ../node_modules/.bin/botpress init
 
 ---------------
@@ -83,7 +81,7 @@ Enjoy Botpress!
 
 **1. install botpress connector and bot dependencies**
 
-```
+```text
 npm install
 npm install botpress-channel-rocketchat
 ```
@@ -92,7 +90,7 @@ npm install botpress-channel-rocketchat
 
 Open `config` folder and create `channel-rocketchat.json` file with the following content:
 
-```
+```text
 {
     "ROCKETCHAT_USER": <BOTPRESS USER NAME>,
     "ROCKETCHAT_PASSWORD": <BOTPRESS USER PASS>,
@@ -103,13 +101,11 @@ Open `config` folder and create `channel-rocketchat.json` file with the followin
 }
 ```
 
-Adjust the content to fit your server and user credentials.
-Make sure `mybotuser` has a `BOT` role on the server.
-For more information on how to create a bot user please refer to [this page](../#1-create-a-bot-user).
+Adjust the content to fit your server and user credentials. Make sure `mybotuser` has a `BOT` role on the server. For more information on how to create a bot user please refer to [this page](./#1-create-a-bot-user).
 
 **3. run the bot**
 
-```
+```text
 npm start
 ```
 
@@ -121,7 +117,7 @@ After executing the command, botpress will try to do the following actions:
 * connect to the Rocket.Chat instance;
 * listen to messages in `general` room.
 
-```
+```text
 $ npm start
 
 > botpress-bot@1.0.0 start /botpress-bot/bot
@@ -200,7 +196,7 @@ LISTEN TRIGGERED
 
 **4. talk to your bot**
 
-On the server, login as a regular user (not the BOT user), go to `general` room, and talk to your
-newly created bot:
+On the server, login as a regular user \(not the BOT user\), go to `general` room, and talk to your newly created bot:
 
-![Botpress bot responses to user messages](./images/botpress-bot-responses.png)
+![Botpress bot responses to user messages](../../.gitbook/assets/botpress-bot-responses.png)
+

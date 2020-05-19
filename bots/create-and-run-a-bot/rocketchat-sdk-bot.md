@@ -1,7 +1,6 @@
 # Run a Rocket.Chat SDK Bot
 
-This bot is a simple example of how you can use [Rocket.Chat JS SDK](https://github.com/RocketChat/Rocket.Chat.js.SDK) methods directly. It is extremely basic and does not handle errors,
-different messsage types, server resets and other production situations.
+This bot is a simple example of how you can use [Rocket.Chat JS SDK](https://github.com/RocketChat/Rocket.Chat.js.SDK) methods directly. It is extremely basic and does not handle errors, different messsage types, server resets and other production situations.
 
 ## Quick start guide
 
@@ -11,20 +10,18 @@ Navigate to the folder where you want to work with the bot and proceed with the 
 
 **1. install Rocket.Chat SDK package**
 
-```
+```text
 npm init -y
 npm install @rocket.chat/sdk
 ```
 
 **2. create bot files**
 
-To proceed with the simplest setup, you need to create two files: the first one will be
-responsible for the working logic of the bot. Another one will contain a map with the
-responses.
+To proceed with the simplest setup, you need to create two files: the first one will be responsible for the working logic of the bot. Another one will contain a map with the responses.
 
 1. create a `server.js` file with the following content:
 
-```js
+```javascript
 const { driver } = require('@rocket.chat/sdk');
 const respmap  = require('./reply');
 
@@ -72,15 +69,13 @@ if (!err) {
 runbot()
 ```
 
-**NOTE:** Adjust the `Environment Setup` section content to fit your server and user
-credentials.
+**NOTE:** Adjust the `Environment Setup` section content to fit your server and user credentials.
 
-Make sure `<BOT USER NAME>` has a `BOT` role on the server.
-For more information on how to create a bot user please refer to [this page](../#1-create-a-bot-user).
+Make sure `<BOT USER NAME>` has a `BOT` role on the server. For more information on how to create a bot user please refer to [this page](./#1-create-a-bot-user).
 
 1. create a `reply.js` file with the following content:
 
-```js
+```javascript
 const respmap = {
     "hi" : "hey",
     "u da bot" : "no, YOU da bot",
@@ -93,13 +88,13 @@ module.exports = respmap;
 
 **3. run the bot**
 
-```
+```text
 node server.js
 ```
 
 After executing the last command, Rocket.Chat SDK bot will try to connect to the Rocket.Chat instance and then will listen to messages in `general` room:
 
-```
+```text
 $ node server.js
 [connect] Connecting { username: 'username',
   password: 'pass',
@@ -139,6 +134,7 @@ Greeting message sent
 
 **4. talk to your bot**
 
-On the server, login as a regular user (not the BOT user), go to `general` room, and talk to your newly created bot:
+On the server, login as a regular user \(not the BOT user\), go to `general` room, and talk to your newly created bot:
 
-![Rocket.Chat SDK bot responses to user messages](./images/rocket-chat-sdk-bot-responses.png)
+![Rocket.Chat SDK bot responses to user messages](../../.gitbook/assets/rocket-chat-sdk-bot-responses.png)
+

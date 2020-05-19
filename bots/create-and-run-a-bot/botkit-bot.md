@@ -1,7 +1,6 @@
 # Run a Botkit Bot
 
-Botkit is the leading developer tool for building chat bots, apps and custom integrations for major
-messaging platforms.
+Botkit is the leading developer tool for building chat bots, apps and custom integrations for major messaging platforms.
 
 Botkit offers everything you need to design, build and operate an app:
 
@@ -9,8 +8,7 @@ Botkit offers everything you need to design, build and operate an app:
 * Fully-featured SDK with support for all major platforms;
 * [Tons of plugins and middlewares](https://botkit.ai/docs/readme-middlewares.html)
 
-In addition, Botkit works with all the NLP services (like Microsoft LUIS and IBM Watson), it can use any
-type of database, and runs on almost any hosting platform.
+In addition, Botkit works with all the NLP services \(like Microsoft LUIS and IBM Watson\), it can use any type of database, and runs on almost any hosting platform.
 
 ## Quick start guide
 
@@ -20,7 +18,7 @@ The fastest way to start with Botkit is using [botkit-starter-rocketchat](https:
 
 **1. clone the starter repo and install dependencies**
 
-```
+```text
 git clone https://github.com/RocketChat/botkit-starter-rocketchat
 cd botkit-starter-rocketchat/
 npm install
@@ -28,7 +26,7 @@ npm install
 
 **2. create a `.env` file with the following content**
 
-```
+```text
 ROCKETCHAT_URL=<ROCKETCHAT HOST>
 ROCKETCHAT_USER=<BOTKIT USER NAME>
 ROCKETCHAT_PASSWORD=<BOTKIT USER PASS>
@@ -42,14 +40,13 @@ RESPOND_TO_EDITED=<ENABLE BOT TO RESPOND TO EDITED MESSAGES>
 
 **3. run the bot**
 
-```
+```text
 npm start
 ```
 
-After executing the command, botkit will try to connect to the Rocket.Chat instance and then
-will listen to messages in `general` room:
+After executing the command, botkit will try to connect to the Rocket.Chat instance and then will listen to messages in `general` room:
 
-```
+```text
 Initializing Botkit v0.6.16
 info: ** No persistent storage method specified! Data may be lost when process shuts down.
 debug: Setting up a handler for spawned
@@ -100,6 +97,7 @@ Botkit Studio statistics are no longer supported. Update your project to the lat
 
 **4. talk to your bot**
 
-On the server, login as a regular user (not the BOT user), go to `general` room, and try to talk to your bot:
+On the server, login as a regular user \(not the BOT user\), go to `general` room, and try to talk to your bot:
 
-![Botkit bot is talking](./images/botkit.gif)
+![Botkit bot is talking](../../.gitbook/assets/botkit.gif)
+

@@ -1,19 +1,9 @@
-# Rocket.Chat in Ubuntu
-
-## Recommended Fastest Server Install via Snaps
-
-Snaps are the easiest way for you to get your server up and running on all supported Linux distributions \(Ubuntu, etc\).
-
-Find out more information about installing using snaps [here](snaps/)
-
-If you would like to enable TLS on your site like this `https://yoursite.com` when using the snap, please see [here](snaps/autossl.md)
-
-## Manual install
+# Rocket.Chat on Debian
 
 This installation guide was tested in the following environment:
 
 * Rocket.Chat 3.0.0
-* OS: Ubuntu 18.04 LTS and Ubuntu 19.04
+* OS: Debian 9.7
 * Mongodb 4.0.9
 * NodeJS 12.14.0
 
@@ -26,11 +16,11 @@ sudo apt-get -y update
 ```
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+sudo apt-get install -y dirmngr && sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 ```
 
 ```bash
-echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 ```
 
 Configure Node.js to be installed via package manager:
@@ -43,12 +33,6 @@ Install build tools, MongoDB, nodejs and graphicsmagick:
 
 ```bash
 sudo apt-get install -y build-essential mongodb-org nodejs graphicsmagick
-```
-
-Only for Ubuntu 19.04 install npm:
-
-```bash
-sudo apt-get install -y npm
 ```
 
 Using npm install inherits and n, and the node version requiere by Rocket.Chat:
@@ -141,7 +125,7 @@ sudo systemctl enable rocketchat && sudo systemctl start rocketchat
 
 ## Optional configurations
 
-[Configure firewall rule](../optional-configurations.md) [Configure a HTTP reverse proxy to access Rocket.Chat server](../configuring-ssl-reverse-proxy.md) \[Configure mongo access control\] \[Configure production values for mongodb\]
+[Configure firewall rule](optional-configurations.md) [Configure a HTTP reverse proxy to access Rocket.Chat server](configuring-ssl-reverse-proxy.md) \[Configure mongo access control\] \[Configure production values for mongodb\]
 
 ## Configure your Rocket.Chat server
 

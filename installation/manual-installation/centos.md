@@ -1,57 +1,48 @@
-# Rocket.Chat in Ubuntu
-
-## Recommended Fastest Server Install via Snaps
-
-Snaps are the easiest way for you to get your server up and running on all supported Linux distributions \(Ubuntu, etc\).
-
-Find out more information about installing using snaps [here](snaps/)
-
-If you would like to enable TLS on your site like this `https://yoursite.com` when using the snap, please see [here](snaps/autossl.md)
-
-## Manual install
+# Rocket.Chat in CentOS
 
 This installation guide was tested in the following environment:
 
 * Rocket.Chat 3.0.0
-* OS: Ubuntu 18.04 LTS and Ubuntu 19.04
+* OS: CentOS 7.6
 * Mongodb 4.0.9
 * NodeJS 12.14.0
 
 ## Install necessary dependency packages
 
-Update package list and configure apt to install the official MongoDB packages with the following repository file:
+Update package list and configure yum to install the official MongoDB packages with the following yum repository file:
 
 ```bash
-sudo apt-get -y update
+sudo yum -y check-update
 ```
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
-```
-
-```bash
-echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+cat << EOF | sudo tee -a /etc/yum.repos.d/mongodb-org-4.0.repo
+[mongodb-org-4.0]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.0/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
+EOF
 ```
 
 Configure Node.js to be installed via package manager:
 
 ```bash
-sudo apt-get -y update && sudo apt-get install -y curl && curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo yum install -y curl && curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
 ```
 
 Install build tools, MongoDB, nodejs and graphicsmagick:
 
 ```bash
-sudo apt-get install -y build-essential mongodb-org nodejs graphicsmagick
+sudo yum install -y gcc-c++ make mongodb-org nodejs
 ```
-
-Only for Ubuntu 19.04 install npm:
 
 ```bash
-sudo apt-get install -y npm
+sudo yum install -y epel-release && sudo yum install -y GraphicsMagick
 ```
 
-Using npm install inherits and n, and the node version requiere by Rocket.Chat:
+Using npm install inherits and n, and the node version required by Rocket.Chat:
 
 ```bash
 sudo npm install -g inherits n && sudo n 12.14.0
@@ -108,7 +99,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Open the Rocket.Chat service file just created \(`/lib/systemd/system/rocketchat.service`\) using sudo and your favourite text editor, and change the ROOT\_URL environmental variable to reflect the URL you want to use for accessing the server \(optionally change MONGO\_URL, MONGO\_OPLOG\_URL and PORT\):
+Open the Rocket.Chat service file just created \(`/usr/lib/systemd/system/rocketchat.service`\) using sudo and your favourite text editor, and change the ROOT\_URL environmental variable to reflect the URL you want to use for accessing the server \(optionally change MONGO\_URL, MONGO\_OPLOG\_URL and PORT\):
 
 ```bash
 MONGO_URL=mongodb://localhost:27017/rocketchat?replicaSet=rs01
@@ -141,9 +132,23 @@ sudo systemctl enable rocketchat && sudo systemctl start rocketchat
 
 ## Optional configurations
 
-[Configure firewall rule](../optional-configurations.md) [Configure a HTTP reverse proxy to access Rocket.Chat server](../configuring-ssl-reverse-proxy.md) \[Configure mongo access control\] \[Configure production values for mongodb\]
+[Configure firewall rule](optional-configurations.md) [Configure a HTTP reverse proxy to access Rocket.Chat server](configuring-ssl-reverse-proxy.md) \[Configure mongo access control\] \[Configure production values for mongodb\]
 
 ## Configure your Rocket.Chat server
 
 Open a web browser and access the configured ROOT\_URL \(`http://your-host-name.com-as-accessed-from-internet:3000`\), follow the configuration steps to set an admin account and your organization and server info.
+
+## ZLIB version problem
+
+Some users had experienced problems starting rocketchat server in CentOS because their zlib version is not compatible with rocket.chat.
+
+If you find an error message similar to the following in the logs:
+
+```bash
+Exception in callback of async function: Error: /lib64/libz.so.1: version `ZLIB_1.2.9' not found
+```
+
+Add this environmental variable in the Rocket.Chat service file \(/usr/lib/systemd/system/rocketchat.service\):
+
+Environment=LD\_PRELOAD=/opt/Rocket.Chat/programs/server/npm/node\_modules/sharp/vendor/lib/libz.so
 

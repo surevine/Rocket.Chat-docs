@@ -14,18 +14,18 @@ By "Support" we mean that Rocket.Chat will provide only security fixes and answe
 
 > Rocket.Chat only provides support for version 1.x or later.
 
-| Release             | Release Date   | End of Life Date |
-|---------------------|----------------|------------------|
-| Rocket.Chat 1.0     | April 2019     | July 2019        |
-| Rocket.Chat 1.1     | May 2019       | August 2019      |
-| Rocket.Chat 1.2     | June 2019      | September 2019   |
-| **Rocket.Chat 1.3** | **July 2019**  | **January 2020** |
-| Rocket.Chat 2.0     | August 2019    | November 2019    |
-| Rocket.Chat 2.1     | September 2019 | December 2019    |
-| Rocket.Chat 2.2     | October 2019   | January 2020     |
-| Rocket.Chat 2.3     | November 2019  | February 2020    |
-| Rocket.Chat 2.4     | December 2019  | June 2020        |
-| Rocket.Chat 3.0     | February 2020  | TBD              |
+| Release | Release Date | End of Life Date |
+| :--- | :--- | :--- |
+| Rocket.Chat 1.0 | April 2019 | July 2019 |
+| Rocket.Chat 1.1 | May 2019 | August 2019 |
+| Rocket.Chat 1.2 | June 2019 | September 2019 |
+| **Rocket.Chat 1.3** | **July 2019** | **January 2020** |
+| Rocket.Chat 2.0 | August 2019 | November 2019 |
+| Rocket.Chat 2.1 | September 2019 | December 2019 |
+| Rocket.Chat 2.2 | October 2019 | January 2020 |
+| Rocket.Chat 2.3 | November 2019 | February 2020 |
+| Rocket.Chat 2.4 | December 2019 | June 2020 |
+| Rocket.Chat 3.0 | February 2020 | TBD |
 
 > Always update to latest stable version before reporting any bugs or before ask for help from community.
 
@@ -39,15 +39,14 @@ Rocket.Chat Services include services such as our push gateway, marketplace, and
 
 October 1st our services will no longer continue to guarantee support for Rocket.Chat 0.x. After this date you may receive errors or warnings about incompatibility.
 
-3 months after a new major release, e.g. 2.x, the last major release, e.g. 1.x, will have the Services support deprecated and you may receive warnings about the deprecation.
-5 months after the deprecation the support will be removed and you may receive errors and warnings about incompatibility.
+3 months after a new major release, e.g. 2.x, the last major release, e.g. 1.x, will have the Services support deprecated and you may receive warnings about the deprecation. 5 months after the deprecation the support will be removed and you may receive errors and warnings about incompatibility.
 
-| Release         | Cloud Service Support Deprecation | Cloud Service Support End of Life |
-|-----------------|-----------------------------------|-----------------------------------|
-| Rocket.Chat 0.x | August 2019                       | January 2020                      |
-| Rocket.Chat 1.x | November 2019                     | April 2020                        |
-| Rocket.Chat 2.x | May 2020                          | October 2020                      |
-| Rocket.Chat 3.x | TBD                               | TBD                               |
+| Release | Cloud Service Support Deprecation | Cloud Service Support End of Life |
+| :--- | :--- | :--- |
+| Rocket.Chat 0.x | August 2019 | January 2020 |
+| Rocket.Chat 1.x | November 2019 | April 2020 |
+| Rocket.Chat 2.x | May 2020 | October 2020 |
+| Rocket.Chat 3.x | TBD | TBD |
 
 ## Supported versions of MongoDB
 
@@ -55,17 +54,17 @@ Each Rocket.Chat release supports different versions of MongoDB, the table below
 
 > Rocket.Chat only adds or removes support of MongoDB versions on major releases so the minor versions are ommited on table below.
 
-| Release         | MongoDB Supported Versions | MongoDB Deprecated Version |
-|-----------------|----------------------------|----------------------------|
-| Rocket.Chat 1.x | 3.2, 3.4, 3.6, 4.0         | 3.2                        |
-| Rocket.Chat 2.x | 3.4, 3.6, 4.0              | 3.4                        |
-| Rocket.Chat 3.x | 3.4, 3.6, 4.0              | 3.4                        |
+| Release | MongoDB Supported Versions | MongoDB Deprecated Version |
+| :--- | :--- | :--- |
+| Rocket.Chat 1.x | 3.2, 3.4, 3.6, 4.0 | 3.2 |
+| Rocket.Chat 2.x | 3.4, 3.6, 4.0 | 3.4 |
+| Rocket.Chat 3.x | 3.4, 3.6, 4.0 | 3.4 |
 
 The upgrade guides available from the official MongoDB documentation are listed below. Bare in mind that it's not possible to skip a version when upgrading, e.g. to upgrade from 3.2 to 3.6 it's necessary to upgrade from 3.2 to 3.4 first and than to 3.6.
 
-- [Upgrade Replicat Set to 3.4](https://docs.mongodb.com/manual/release-notes/3.4-upgrade-replica-set/)
-- [Upgrade Replicat Set to 3.6](https://docs.mongodb.com/manual/release-notes/3.6-upgrade-replica-set/)
-- [Upgrade Replicat Set to 4.0](https://docs.mongodb.com/manual/release-notes/4.0-upgrade-replica-set/)
+* [Upgrade Replicat Set to 3.4](https://docs.mongodb.com/manual/release-notes/3.4-upgrade-replica-set/)
+* [Upgrade Replicat Set to 3.6](https://docs.mongodb.com/manual/release-notes/3.6-upgrade-replica-set/)
+* [Upgrade Replicat Set to 4.0](https://docs.mongodb.com/manual/release-notes/4.0-upgrade-replica-set/)
 
 > It's possible to bypass the MongoDB version check by using the environment variable `BYPASS_MONGO_VALIDATION=true`. Bare in mind that this work around should be used only when extrictly necessary and may prevent some functionalities to work properly or even prevent the server to start.
 
@@ -75,23 +74,23 @@ The ecosystem of browsers has been, and still is, an ever evolving field of chan
 
 We support the following desktop browsers and versions:
 
-| Browser                     | Supported Versions  |
-|-----------------------------|---------------------|
-| Google Chrome               | Latest 3 versions   |
-| Mozilla Firefox             | Latest 3 versions   |
-| Apple Safari                | Latest 2 versions   |
-| Microsoft Edge              | Latest 2 versions   |
+| Browser | Supported Versions |
+| :--- | :--- |
+| Google Chrome | Latest 3 versions |
+| Mozilla Firefox | Latest 3 versions |
+| Apple Safari | Latest 2 versions |
+| Microsoft Edge | Latest 2 versions |
 | Microsoft Internet Explorer | Latest version only |
 
 > There may be small exceptions in rare cases.
 
-That being said, here's how you can find out if **your** browser version is still supported (all lists include an indication if a specific browser version is still supported or not):
+That being said, here's how you can find out if **your** browser version is still supported \(all lists include an indication if a specific browser version is still supported or not\):
 
-- [Version history of Mozilla Firefox](https://en.wikipedia.org/wiki/Firefox_version_history)
-- [Version history of Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome_version_history)
-- [Version history of Apple Safari](https://en.wikipedia.org/wiki/Safari_version_history)
-- [Version history of Microsoft Edge](https://en.wikipedia.org/wiki/Microsoft_Edge#Release_history)
-- [Version history of Microsoft Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer_version_history)
+* [Version history of Mozilla Firefox](https://en.wikipedia.org/wiki/Firefox_version_history)
+* [Version history of Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome_version_history)
+* [Version history of Apple Safari](https://en.wikipedia.org/wiki/Safari_version_history)
+* [Version history of Microsoft Edge](https://en.wikipedia.org/wiki/Microsoft_Edge#Release_history)
+* [Version history of Microsoft Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer_version_history)
 
 ## Community support
 
@@ -99,26 +98,27 @@ We have a great community that likes to give back.
 
 Some great places to ask your questions:
 
-- [Rocket.Chat forums](https://forums.rocket.chat/)
-- Stack Overflow [Rocket.Chat Tag](https://stackoverflow.com/questions/tagged/rocket.chat)
-- [Server Fault](https://serverfault.com/search?q=Rocket.Chat)
+* [Rocket.Chat forums](https://forums.rocket.chat/)
+* Stack Overflow [Rocket.Chat Tag](https://stackoverflow.com/questions/tagged/rocket.chat)
+* [Server Fault](https://serverfault.com/search?q=Rocket.Chat)
 
 Our community also often hangs out on our [community server](https://open.rocket.chat).
 
 Some of the channels to get help:
 
-- [#support](https://open.rocket.chat/channel/support) channel for help with general Rocket.Chat
-- [#ubuntu-snap](https://open.rocket.chat/channel/ubuntu-snap) channel for help with snap installs
-- [#desktop](https://open.rocket.chat/channel/desktop) channel for help with the desktop client
-- [#bots](https://open.rocket.chat/channel/bots) channel for help with chatbot scripting
-- [#dev](https://open.rocket.chat/channel/dev) channel for developers needing help developing new features
+* [\#support](https://open.rocket.chat/channel/support) channel for help with general Rocket.Chat
+* [\#ubuntu-snap](https://open.rocket.chat/channel/ubuntu-snap) channel for help with snap installs
+* [\#desktop](https://open.rocket.chat/channel/desktop) channel for help with the desktop client
+* [\#bots](https://open.rocket.chat/channel/bots) channel for help with chatbot scripting
+* [\#dev](https://open.rocket.chat/channel/dev) channel for developers needing help developing new features
 
 While the de facto language amongst the Rocket.Chat community is english it may be easier for some to discuss their issues in their native language. Have a look at the following channels to see whether there is a user group for your language:
 
-- [#ug_german](https://open.rocket.chat/channel/ug_german) German Rocket.Chat User Group
+* [\#ug\_german](https://open.rocket.chat/channel/ug_german) German Rocket.Chat User Group
 
 Remember to have a little patience. Support is provided by other members of the community like you in their free time.
 
 ## Reporting bugs
 
-If you think you have found a bug.  Please see [Reporting Issues](../contributing/reporting-issues/)
+If you think you have found a bug. Please see [Reporting Issues](contributing/reporting-issues.md)
+

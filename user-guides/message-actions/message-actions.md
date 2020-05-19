@@ -30,7 +30,7 @@ Starred messages are per chat room and are not global; each room has its list of
 
 ## Pin messages
 
-Pin a message to a channel to make that message easily accessible to all user's on the channel.   To pin a message, select the **Pin Message** option in the message actions menu. Remove already pinned messages by selecting **Remove Pin**.
+Pin a message to a channel to make that message easily accessible to all user's on the channel. To pin a message, select the **Pin Message** option in the message actions menu. Remove already pinned messages by selecting **Remove Pin**.
 
 _The administrator of a Rocket.Chat team sets the permissions for who can pin messages in a channel. By default, only administrators, moderators, and owners of the channel can pin messages ._
 
@@ -58,9 +58,9 @@ Reply to a message to quote a message from another user. The reply automatically
 
 There are two options for replies:
 
-Use **Reply in Thread** to start a new thread underneath the original message. Threads create a string of messages that quote the original.
- Use **Reply in Direct Message** to quote the original message in a direct message to that user.
+Use **Reply in Thread** to start a new thread underneath the original message. Threads create a string of messages that quote the original. Use **Reply in Direct Message** to quote the original message in a direct message to that user.
 
 ## Quote a message
 
 Quote a message to respond to another user's message without notifying the user directly. Select **Quote** in the message actions menu.
+

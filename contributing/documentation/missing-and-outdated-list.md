@@ -1,6 +1,6 @@
 # In depth missing articles list
 
-This list is a complement of the [Documentation Map](../documentation-map/).
+This list is a complement of the [Documentation Map](documentation-map.md).
 
 All the missing and outdated articles on the documentation map will be listed and linked to here.
 
@@ -68,7 +68,7 @@ Create a guide on how to use the `Layout` setting section to customize some ui a
 
 ## Assets
 
-Create a guide on how to add assets (images, like favico and logos across the app) to Rocket.Chat.
+Create a guide on how to add assets \(images, like favico and logos across the app\) to Rocket.Chat.
 
 Also Explain what each asset size will change.
 
@@ -102,4 +102,5 @@ Create a guide on how to use Rocket.Chat as an Oauth provider.
 
 ## Oauth2 O365
 
-Create documentation on how to use oauth2 o365 authentication service with Rocket.Chat. You can find info on this issue <https://github.com/RocketChat/Rocket.Chat/issues/6809>
+Create documentation on how to use oauth2 o365 authentication service with Rocket.Chat. You can find info on this issue [https://github.com/RocketChat/Rocket.Chat/issues/6809](https://github.com/RocketChat/Rocket.Chat/issues/6809)
+

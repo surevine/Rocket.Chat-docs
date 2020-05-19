@@ -1,8 +1,8 @@
 ---
-permalink: "/contributing/security/responsible-disclosure-policy/"
+permalink: /contributing/security/responsible-disclosure-policy/
 redirect_from:
-- "/contributing/security/responsibledisclosurepolicy"
-- "/contributing/security/responsibledisclosurepolicy/"
+  - /contributing/security/responsibledisclosurepolicy
+  - /contributing/security/responsibledisclosurepolicy/
 ---
 
 # Responsible Disclosure Policy
@@ -14,3 +14,4 @@ Please refrain from requesting compensation for reporting vulnerabilities. If yo
 You are not allowed to search for vulnerabilities on Rocket.Chat's Community server. Rocket.Chat is open source software, you can install a copy yourself and test against that. If you want to perform testing without setting Rocket.Chat up yourself please contact us to arrange access to a staging server.
 
 You can find more about how to contribute to our security [here](https://rocket.chat/docs/contributing/security/).
+

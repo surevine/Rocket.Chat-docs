@@ -1,16 +1,14 @@
 # Markdown Style Guide
 
-The Rocket.Chat documentation supports the [Markdown Markup Language](https://en.wikipedia.org/wiki/Markdown) (You can also find a "Cheatsheet" [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+The Rocket.Chat documentation supports the [Markdown Markup Language](https://en.wikipedia.org/wiki/Markdown) \(You can also find a "Cheatsheet" [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)\)
 
 Markdown can be written in various different styles, in this document you will find the standard formatting guide for creating Rocket.Chat documentation.
 
-TODO:
-We are currently running a markdown [linter](https://github.com/markdownlint/markdownlint) on incoming Pull Requests, so it is a good idea to download it and run it locally before submitting a Pull Request.
+TODO: We are currently running a markdown [linter](https://github.com/markdownlint/markdownlint) on incoming Pull Requests, so it is a good idea to download it and run it locally before submitting a Pull Request.
 
 All the rules listed here have their respective code attached here, so if the linter fails you can come here and check out the rule that was broken.
 
-You can run the Markdown linter locally by installing this [Markdown Linter Tool](https://github.com/markdownlint/markdownlint)
-and running the command `mdl ../` command on the docs main folder.
+You can run the Markdown linter locally by installing this [Markdown Linter Tool](https://github.com/markdownlint/markdownlint) and running the command `mdl ../` command on the docs main folder.
 
 ## Rules
 
@@ -20,7 +18,7 @@ Headers should not be skipped, instead incremented one by one
 
 **Wrong**:
 
-```markdown
+```text
 # Header 1
 
 ### Header 3
@@ -30,7 +28,7 @@ We skipped out a 2nd level header in this document
 
 **Correct**:
 
-```markdown
+```text
 # Header 1
 
 ## Header 2
@@ -46,11 +44,11 @@ We skipped out a 2nd level header in this document
 
 ### MD002 - First header should be a top level header
 
-The first header of the document should be a top level header (H1).
+The first header of the document should be a top level header \(H1\).
 
 **Wrong**:
 
-```markdown
+```text
 ## This isn't a H1 header
 
 ### Another header
@@ -58,7 +56,7 @@ The first header of the document should be a top level header (H1).
 
 **Correct**:
 
-```markdown
+```text
 # Start with a H1 header
 
 ## Then use a H2 for subsections
@@ -70,7 +68,7 @@ The header style used on documents should be `atx`.
 
 **Wrong**:
 
-```markdown
+```text
 Setext style H1
 ===============
 
@@ -82,7 +80,7 @@ Setext style H2
 
 **Correct**:
 
-```markdown
+```text
 # ATX style H1
 
 ## ATX style H2
@@ -94,7 +92,7 @@ Lists should be created using dashes.
 
 **Wrong**:
 
-```markdown
+```text
 * Item 1
 + Item 2
 - Item 3
@@ -102,7 +100,7 @@ Lists should be created using dashes.
 
 **Correct**:
 
-```markdown
+```text
 - Item 1
 - Item 2
 - Item 3
@@ -114,7 +112,7 @@ Lists should have consistent indentation, usually this rule will be triggered be
 
 **Wrong**:
 
-```markdown
+```text
 - Item 1
     - Nested Item 1
     - Nested Item 2
@@ -123,7 +121,7 @@ Lists should have consistent indentation, usually this rule will be triggered be
 
 **Correct**:
 
-```markdown
+```text
 - Item 1
     - Nested Item 1
     - Nested Item 2
@@ -136,7 +134,7 @@ Bulleted lists should start on the beginning of the line.
 
 **Wrong**:
 
-```markdown
+```text
 Some text
 
     * List item
@@ -145,7 +143,7 @@ Some text
 
 **Correct**:
 
-```markdown
+```text
 Some test
 
 * List item
@@ -158,14 +156,14 @@ List items should be indented using 4 spaces.
 
 **Wrong**:
 
-```markdown
+```text
 * List item
     * Nested list item indented by 3 spaces
 ```
 
 **Correct**:
 
-```markdown
+```text
 * List item
     * Nested list item indented by 4 spaces
 ```
@@ -188,13 +186,13 @@ When creating links you should use the `[]` surrounding the text and `()` surrou
 
 **Wrong**:
 
-```markdown
+```text
 (Incorrect link syntax)[http://www.example.com/]
 ```
 
 **Correct**:
 
-```markdown
+```text
     [Correct link syntax](http://www.example.com/)
 ```
 
@@ -204,7 +202,7 @@ There should not have more than one consecutive blank line on the document.
 
 **Wrong**:
 
-```markdown
+```text
 Some text here
 
 
@@ -213,7 +211,7 @@ Some more text here
 
 **Correct**:
 
-```markdown
+```text
 Some text here
 
 Some more text here
@@ -225,7 +223,7 @@ There should be a space after the hashes on atx style headers.
 
 **Wrong**:
 
-```markdown
+```text
 #Header 1
 
 ##Header 2
@@ -233,7 +231,7 @@ There should be a space after the hashes on atx style headers.
 
 **Correct**:
 
-```markdown
+```text
 # Header 1
 
 ## Header 2
@@ -245,7 +243,7 @@ There shouldn't have more than 1 space after the hash on atx style headers.
 
 **Wrong**:
 
-```markdown
+```text
 #  Header 1
 
 ##  Header 2
@@ -253,7 +251,7 @@ There shouldn't have more than 1 space after the hash on atx style headers.
 
 **Correct**:
 
-```markdown
+```text
 # Header 1
 
 ## Header 2
@@ -261,11 +259,11 @@ There shouldn't have more than 1 space after the hash on atx style headers.
 
 ### MD022 - Headers should be surrounded by blank lines
 
-All headers should have a blank line both before and after (except where the header is at the beginning or end of the document)
+All headers should have a blank line both before and after \(except where the header is at the beginning or end of the document\)
 
 **Wrong**:
 
-```markdown
+```text
 # Header 1
 Some text
 
@@ -275,7 +273,7 @@ Some more text
 
 **Correct**:
 
-```markdown
+```text
 # Header 1
 
 Some text
@@ -289,7 +287,7 @@ Some more text
 
 **Wrong**:
 
-```markdown
+```text
 Some text
 
     # Indented header
@@ -297,7 +295,7 @@ Some text
 
 **Correct**:
 
-```markdown
+```text
 Some text
 
 # Header
@@ -305,11 +303,11 @@ Some text
 
 ### MD025 - No multiple top level headers in the same document
 
-There should only have one top level header (`h1`) on a document.
+There should only have one top level header \(`h1`\) on a document.
 
 **Wrong**:
 
-```markdown
+```text
 # Top level header
 
 # Another top level header
@@ -317,7 +315,7 @@ There should only have one top level header (`h1`) on a document.
 
 **Correct**:
 
-```markdown
+```text
 # Title
 
 ## Header
@@ -327,18 +325,18 @@ There should only have one top level header (`h1`) on a document.
 
 ### MD027 - No multiple spaces after blockquote symbol
 
-Blockquote should not have more than one space after the blockquote symbol ( `>` ).
+Blockquote should not have more than one space after the blockquote symbol \( `>` \).
 
 **Wrong**:
 
-```markdown
+```text
 >  This is a block quote with bad indentation
 >  there should only be one.
 ```
 
 **Correct**:
 
-```markdown
+```text
 > This is a block quote with bad indentation
 > there should only be one.
 ```
@@ -349,7 +347,7 @@ There shouldn't have a blank line inside the same blockquote.
 
 **Wrong**:
 
-```markdown
+```text
 > This is a blockquote
 > which is immediately followed by
 
@@ -359,7 +357,7 @@ There shouldn't have a blank line inside the same blockquote.
 
 **Correct**:
 
-```markdown
+```text
 > This is a blockquote.
 
 And Jimmy also said:
@@ -369,7 +367,7 @@ And Jimmy also said:
 
 Alternatively, if they are supposed to be the same quote, then add the blockquote symbol at the beginning of the blank line
 
-```markdown
+```text
 > This is a blockquote.
 >
 > This is the same blockquote.
@@ -381,7 +379,7 @@ Ordered lists should be ordered by a prefix that increases in numerical order.
 
 **Wrong**:
 
-```markdown
+```text
 1. Do this.
 1. Do that.
 1. Done.
@@ -389,7 +387,7 @@ Ordered lists should be ordered by a prefix that increases in numerical order.
 
 **Correct**:
 
-```markdown
+```text
 1. Do this.
 2. Do that.
 3. Done.
@@ -401,7 +399,7 @@ There should be only one space after a list marker.
 
 **Wrong**:
 
-```markdown
+```text
 *Foo
 *Bar
 *Baz
@@ -413,7 +411,7 @@ There should be only one space after a list marker.
 
 **Correct**:
 
-```markdown
+```text
 * Foo
 * Bar
 * Baz
@@ -433,7 +431,7 @@ Fenced code blocks should be surrounded by blank lines.
 
 **Wrong**:
 
-```markdown
+```text
 Some text
 `` `
 Code block
@@ -447,7 +445,7 @@ Some more text
 
 **Correct**:
 
-```markdown
+```text
 Some text
 
 `` `
@@ -467,7 +465,7 @@ Lists should be surrounded by blank lines.
 
 **Wrong**:
 
-```markdown
+```text
 Some text
 * Some
 * List
@@ -479,7 +477,7 @@ Some text
 
 **Correct**:
 
-```markdown
+```text
 Some text
 
 * Some
@@ -493,27 +491,27 @@ Some text
 
 ### MD034 - No bare URLs
 
-There should no bare urls on the document, surround the links with angle brackets (`< >`).
+There should no bare urls on the document, surround the links with angle brackets \(`< >`\).
 
 **Wrong**:
 
-```markdown
+```text
 For more information, see http://www.example.com/.
 ```
 
 **Correct**:
 
-```markdown
+```text
 For more information, see <http://www.example.com/>.
 ```
 
 ### MD035 - Horizontal rule style
 
-Horizontal rules should be created using three slashes (`---`).
+Horizontal rules should be created using three slashes \(`---`\).
 
 **Wrong**:
 
-```markdown
+```text
 ***
 
 * * *
@@ -523,17 +521,17 @@ Horizontal rules should be created using three slashes (`---`).
 
 **Correct**:
 
-```markdown
+```text
 ---
 ```
 
 ### MD037 - No spaces inside emphasis markers
 
-There shouldn't have spaces inside emphasis markers (bold, italic).
+There shouldn't have spaces inside emphasis markers \(bold, italic\).
 
 **Wrong**:
 
-```markdown
+```text
 Here is some ** bold ** text.
 
 Here is some _ italic _ text.
@@ -541,7 +539,7 @@ Here is some _ italic _ text.
 
 **Correct**:
 
-```markdown
+```text
 Here is some **bold** text.
 
 Here is some _italic_ text.
@@ -553,7 +551,7 @@ There shouldn't have spaces inside code span elements.
 
 **Wrong**:
 
-```markdown
+```text
 ` some text `
 
 `some text `
@@ -563,7 +561,7 @@ There shouldn't have spaces inside code span elements.
 
 **Correct**:
 
-```markdown
+```text
 `some text`
 ```
 
@@ -573,13 +571,13 @@ There shouldn't have spaces inside link texts.
 
 **Wrong**:
 
-```markdown
+```text
 [ a link ](http://www.example.com/)
 ```
 
 **Correct**:
 
-```markdown
+```text
 [a link](http://www.example.com/)
 ```
 
@@ -589,18 +587,15 @@ Code blocks should be fenced.
 
 **Wrong**:
 
-```markdown
-
+```text
     codeblock using indentation.
-
 ```
 
 **Correct**:
 
-```markdown
-
+```text
 ` ` `
 codeblock using fences.
 ` ` `
-
 ```
+

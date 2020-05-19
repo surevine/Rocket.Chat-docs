@@ -2,16 +2,16 @@
 
 ## Is it a bug?
 
-<b>GitHub Issues are for bugs only.</b>
+**GitHub Issues are for bugs only.**
 
 Examples of things that aren't considered bugs:
 
-- Can't figure out how to do something
-- Having issues accessing your server
-- Can't get the server installed
-- I want a new widget in Rocket.Chat
+* Can't figure out how to do something
+* Having issues accessing your server
+* Can't get the server installed
+* I want a new widget in Rocket.Chat
 
-If your issue falls into one of these categories, please see [Getting Support](../../getting-support/)
+If your issue falls into one of these categories, please see [Getting Support](../getting-support.md)
 
 New feature requests should be posted in the [forums](https://forums.rocket.chat)
 
@@ -33,14 +33,14 @@ Giving clear background information will help save a lot of time
 
 Please include the following information in order to promote effective fixing.
 
-- Operating System / Version / Architecture (64 bit?)
-- Browser type and version, including any add-ons. (e.g. AdBlocker, NoScript, etc.)
-- Rocket.Chat version
-- Expected behavior
-- Actual behavior
-- Can the bug consistently be reproduced? If so, how?
-- Relevant errors and other log output
-- Screen shots as necessary
+* Operating System / Version / Architecture \(64 bit?\)
+* Browser type and version, including any add-ons. \(e.g. AdBlocker, NoScript, etc.\)
+* Rocket.Chat version
+* Expected behavior
+* Actual behavior
+* Can the bug consistently be reproduced? If so, how?
+* Relevant errors and other log output
+* Screen shots as necessary
 
 Here are some links to help you register your bug in the right place:
 
@@ -56,19 +56,20 @@ Here are some links to help you register your bug in the right place:
 
 Can be done in two ways:
 
-1. `Administration` -> `Info`
+1. `Administration` -&gt; `Info`
 2. Your Rocket.Chat URL followed by `/api/info`
 
 #### Gathering Logs
 
-##### Browser
+**Browser**
 
-To collect logs from your browser press <kbd>Ctrl/Cmd</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd>. Errors appear in red.
+To collect logs from your browser press Ctrl/Cmd + Shift + j. Errors appear in red.
 
-##### Server
+**Server**
 
 To collect logs from your browser as an Admin log into your Rocket.Chat. From there click the arrow by your avatar and go to Administration. Once there you will see: `View Logs`.
 
 Often its useful to open this in another browser and reproduce the problem again and you will see an exception pop up in the logs.
 
 Also consider your web server logs and general system logs.
+

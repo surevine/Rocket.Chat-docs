@@ -4,9 +4,9 @@ This page explains the ins and outs of messaging in Rocket.Chat.
 
 ## Compose messages
 
-To compose a message in Rocket.Chat, go the channel or user you want to send a message. Type the message box and press <kbd>Enter</kbd> or the **Send** Button.
+To compose a message in Rocket.Chat, go the channel or user you want to send a message. Type the message box and press Enter or the **Send** Button.
 
-If you want to add new lines of text, press <kbd>Shift</kbd> + <kbd>Enter</kbd> to add a new line.
+If you want to add new lines of text, press Shift + Enter to add a new line.
 
 ## Cursor movement
 
@@ -24,17 +24,17 @@ You can also notify everyone in a channel by typing `@all`. We recommend using `
 
 You can send a variety of attachments on your messages, like files, audio, links, videos, and many more.
 
-To access the attachment menu you can, click on the **plus** (+) icon on the message input.
+To access the attachment menu you can, click on the **plus** \(+\) icon on the message input.
 
 ### Files
 
 You can select files using three methods:
 
-- By choosing the **Select Files from Computer** option from the attachment menu
-- By dragging and dropping the file on Rocket.Chat
-- By pasting an image from the clipboard
+* By choosing the **Select Files from Computer** option from the attachment menu
+* By dragging and dropping the file on Rocket.Chat
+* By pasting an image from the clipboard
 
-After selecting the file,  add a name and a description of the file and press **Send**.
+After selecting the file, add a name and a description of the file and press **Send**.
 
 _Remember that the server administrator can block certain file types from being uploaded._
 
@@ -56,7 +56,7 @@ Preview the video you recorded by pressing **Ok**. A window appears where you ca
 
 ## Interacting with Google Drive
 
-_Note:_ Google Drive features available only if the server's admin has enabled Google Drive access and provided the correct API keys. For instructions to obtain these keys can see the [Administrator guides](../../administrator-guides/).
+_Note:_ Google Drive features available only if the server's admin has enabled Google Drive access and provided the correct API keys. For instructions to obtain these keys can see the [Administrator guides](../administrator-guides/).
 
 ### From Google Drive to Rocket.Chat
 
@@ -66,8 +66,7 @@ Files upload in the same format to Rocket.Chat as they are in Google Drive with 
 
 ### From Rocket.Chat to Google Drive
 
-Files uploaded as a message attached to a room can be uploaded to Google Drive. Click **Save to Google Drive** above the file attachment.
-The file saves to Google Drive in its original format.
+Files uploaded as a message attached to a room can be uploaded to Google Drive. Click **Save to Google Drive** above the file attachment. The file saves to Google Drive in its original format.
 
 ### Create Google Docs, Slides and Sheets
 
@@ -79,7 +78,7 @@ URL's to other sites automatically generate a preview of that site's content. Co
 
 ## Location
 
-To share your location, click  **Share My Location**. A message generates a link to a Google Map of your location.
+To share your location, click **Share My Location**. A message generates a link to a Google Map of your location.
 
 ## Emoji
 
@@ -93,7 +92,7 @@ Rocket.Chat changes common emoticons, or symbols used to represent emoji, to the
 
 ### Disabling emojis
 
-Emojis can be enabled/disabled in [Your Account](../managing-your-account/) settings under the **Messages** section.
+Emojis can be enabled/disabled in [Your Account](managing-your-account.md) settings under the **Messages** section.
 
 When graphical emojis are disabled, emoji keywords and shortcuts display as regular text.
 
@@ -104,6 +103,7 @@ Use the following symbols to format text as desired:
 * Bold: `*Lorem ipsum dolor*`
 * Italic: `_Lorem ipsum dolor_`
 * Strike: `~Lorem ipsum dolor~`
-* Inline code: `` `Lorem ipsum dolor` ``
+* Inline code: ```Lorem ipsum dolor``` 
 * Image: `![Alt text](https://rocket.chat/favicon.ico)`
 * Link: `[Lorem ipsum dolor](https://www.rocket.chat/)` or `<https://www.rocket.chat/ |Lorem ipsum dolor>`
+
